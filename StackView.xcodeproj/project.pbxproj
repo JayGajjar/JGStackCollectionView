@@ -14,6 +14,10 @@
 		6965C73E1A77B85A00A04211 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6965C73D1A77B85A00A04211 /* Images.xcassets */; };
 		6965C7411A77B85A00A04211 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6965C73F1A77B85A00A04211 /* LaunchScreen.xib */; };
 		6965C74D1A77B85A00A04211 /* StackViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965C74C1A77B85A00A04211 /* StackViewTests.m */; };
+		6965C75E1A77B8D400A04211 /* JGCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965C7591A77B8D400A04211 /* JGCardLayout.m */; };
+		6965C75F1A77B8D400A04211 /* JGStackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965C75B1A77B8D400A04211 /* JGStackedLayout.m */; };
+		6965C7601A77B8D400A04211 /* JGStackedCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965C75D1A77B8D400A04211 /* JGStackedCollectionView.m */; };
+		6965C7641A77B90D00A04211 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965C7631A77B90D00A04211 /* CardCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		6965C7461A77B85A00A04211 /* StackViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6965C74B1A77B85A00A04211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6965C74C1A77B85A00A04211 /* StackViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackViewTests.m; sourceTree = "<group>"; };
+		6965C7581A77B8D400A04211 /* JGCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCardLayout.h; sourceTree = "<group>"; };
+		6965C7591A77B8D400A04211 /* JGCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCardLayout.m; sourceTree = "<group>"; };
+		6965C75A1A77B8D400A04211 /* JGStackedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGStackedLayout.h; sourceTree = "<group>"; };
+		6965C75B1A77B8D400A04211 /* JGStackedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStackedLayout.m; sourceTree = "<group>"; };
+		6965C75C1A77B8D400A04211 /* JGStackedCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGStackedCollectionView.h; sourceTree = "<group>"; };
+		6965C75D1A77B8D400A04211 /* JGStackedCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStackedCollectionView.m; sourceTree = "<group>"; };
+		6965C7621A77B90D00A04211 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
+		6965C7631A77B90D00A04211 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,8 @@
 		6965C72F1A77B85A00A04211 /* StackView */ = {
 			isa = PBXGroup;
 			children = (
+				6965C7611A77B90D00A04211 /* CollectionViewCell */,
+				6965C7561A77B8D400A04211 /* JGStackedCollectionVIew */,
 				6965C7341A77B85A00A04211 /* AppDelegate.h */,
 				6965C7351A77B85A00A04211 /* AppDelegate.m */,
 				6965C7371A77B85A00A04211 /* ViewController.h */,
@@ -117,6 +131,37 @@
 				6965C74B1A77B85A00A04211 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6965C7561A77B8D400A04211 /* JGStackedCollectionVIew */ = {
+			isa = PBXGroup;
+			children = (
+				6965C7571A77B8D400A04211 /* Layouts */,
+				6965C75C1A77B8D400A04211 /* JGStackedCollectionView.h */,
+				6965C75D1A77B8D400A04211 /* JGStackedCollectionView.m */,
+			);
+			name = JGStackedCollectionVIew;
+			path = StackedCollectionVIew;
+			sourceTree = "<group>";
+		};
+		6965C7571A77B8D400A04211 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				6965C7581A77B8D400A04211 /* JGCardLayout.h */,
+				6965C7591A77B8D400A04211 /* JGCardLayout.m */,
+				6965C75A1A77B8D400A04211 /* JGStackedLayout.h */,
+				6965C75B1A77B8D400A04211 /* JGStackedLayout.m */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		6965C7611A77B90D00A04211 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6965C7621A77B90D00A04211 /* CardCell.h */,
+				6965C7631A77B90D00A04211 /* CardCell.m */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6965C7391A77B85A00A04211 /* ViewController.m in Sources */,
+				6965C7641A77B90D00A04211 /* CardCell.m in Sources */,
 				6965C7361A77B85A00A04211 /* AppDelegate.m in Sources */,
+				6965C7601A77B8D400A04211 /* JGStackedCollectionView.m in Sources */,
+				6965C75E1A77B8D400A04211 /* JGCardLayout.m in Sources */,
+				6965C75F1A77B8D400A04211 /* JGStackedLayout.m in Sources */,
 				6965C7331A77B85A00A04211 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +392,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = StackView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +404,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = StackView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
