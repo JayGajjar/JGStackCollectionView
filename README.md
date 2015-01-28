@@ -1,43 +1,20 @@
-JGCustomSelection
-<<<<<<< HEAD
+JGStackCollectionView
 ========================
 
-A selection controller made with combinitation of UITableView and UICollectionview
+A iOS safari like stack view made using UICollectionView.
 
 # Installation
-    Copy JGCustomSelection from the storyboard and initialize the viewcontroller whenever needed
-## Manual
-Add the files in the classes folder to your project.
+    Copy all the files form StackedCollectionVIew folder. Assign class JGStackedCollectionView to UICollectionView from storyboard
 
 # Usage
-
-```  objc
-JGCustomSelection *customSelection = [self.storyboard instantiateViewControllerWithIdentifier:@"JGCustomSelection"];
-customSelection.tableViewDataArray = [[self generateDataSource] mutableCopy];
-customSelection.delegate = self;
-[self presentViewController:customSelection animated:YES completion:^{
-
-}];
-
-
-
-#pragma mark - JGCustomSelectionDelegate
-
--(void)JGCustomSelectionSelectedValues:(NSArray *)selectedValues{
-    self.resultLbl.text = [NSString stringWithFormat:@"%lu developers selected",(unsigned long)selectedValues.count];
-}
-
-```
+Simply use it as normal collection view by calling its delegate and datasource methods
 
 # Demo
-JGCustomSelection includes a sample project and revelent classes.
+JGStackCollectionView includes a sample project and revelent classes.
 
 # Compatibility
 - This project uses ARC.
 - This project was tested with iOS 7 & 8.
 
 # License
-JGCustomSelection is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
-=======
-=================
->>>>>>> 8c0a9cb73879fbc1bd726f2074a95355ca0c292a
+JGStackCollectionView is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
