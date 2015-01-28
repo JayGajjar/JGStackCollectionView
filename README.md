@@ -3,6 +3,8 @@ JGStackCollectionView
 
 A iOS safari like stack view made using UICollectionView.
 
+![alt tag](https://github.com/JayGajjar/JGStackCollectionView/blob/master/StackView/mainImage.png)
+
 # Installation
     Copy all the files form StackedCollectionVIew folder. Assign class JGStackedCollectionView to UICollectionView from storyboard
 
