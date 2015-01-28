@@ -18,6 +18,7 @@
 		6965C75F1A77B8D400A04211 /* JGStackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965C75B1A77B8D400A04211 /* JGStackedLayout.m */; };
 		6965C7601A77B8D400A04211 /* JGStackedCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965C75D1A77B8D400A04211 /* JGStackedCollectionView.m */; };
 		6965C7641A77B90D00A04211 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965C7631A77B90D00A04211 /* CardCell.m */; };
+		697130E01A78A96B0048F7AC /* mainImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 697130DF1A78A96B0048F7AC /* mainImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		6965C75D1A77B8D400A04211 /* JGStackedCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStackedCollectionView.m; sourceTree = "<group>"; };
 		6965C7621A77B90D00A04211 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
 		6965C7631A77B90D00A04211 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
+		697130DF1A78A96B0048F7AC /* mainImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		6965C72F1A77B85A00A04211 /* StackView */ = {
 			isa = PBXGroup;
 			children = (
+				697130DF1A78A96B0048F7AC /* mainImage.png */,
 				6965C7611A77B90D00A04211 /* CollectionViewCell */,
 				6965C7561A77B8D400A04211 /* JGStackedCollectionVIew */,
 				6965C7341A77B85A00A04211 /* AppDelegate.h */,
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697130E01A78A96B0048F7AC /* mainImage.png in Resources */,
 				6965C73C1A77B85A00A04211 /* Main.storyboard in Resources */,
 				6965C7411A77B85A00A04211 /* LaunchScreen.xib in Resources */,
 				6965C73E1A77B85A00A04211 /* Images.xcassets in Resources */,
@@ -465,6 +469,7 @@
 				6965C7521A77B85A00A04211 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6965C7531A77B85A00A04211 /* Build configuration list for PBXNativeTarget "StackViewTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +478,7 @@
 				6965C7551A77B85A00A04211 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
